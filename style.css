@@ -1,0 +1,127 @@
+body {
+    background-color: #fcdc00;
+    margin: 0px;
+}
+
+@keyframes alert-appear {
+    0% {
+        visibility: hidden;
+        width: 18rem;
+        opacity: 0;
+    }
+
+    50% {
+
+        width: 21rem;
+        opacity: 0.5;
+        visibility: visible;
+
+    }
+
+    100% {
+        width: 20rem;
+        opacity: 1;
+
+    }
+
+}
+
+#main-continer {
+    /* background-color: aqua; */
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#table-game {
+    display: grid;
+    grid-template-rows: repeat(3, 5rem);
+    grid-template-columns: repeat(3, 5rem);
+    grid-gap: 2px;
+    text-align: center;
+}
+
+.squre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    border: 3px solid rgba(0, 0, 0, 0.8);
+    width: 81px;
+    height: 81px;
+}
+
+.squre h3 {
+    width: 20px;
+    height: 20px;
+    font-size: 30px;
+    padding: 0px;
+    transition: all 0.5s;
+}
+
+.squre:hover {
+    background-color: #c6b439;
+    box-shadow: 2px 5px 15px rgb(0, 0, 0, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#all-content {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    right: 3rem;
+}
+
+#results-list {
+    background-color: beige;
+    height: 17rem;
+    width: 15rem;
+    text-align: center;
+    border-radius: 30px;
+}
+
+#players-result {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+button {
+    background-color: rgb(84 60 172);
+    color: white;
+    width: 6rem;
+    height: 2rem;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 1px 2px 5px rgb(0, 0, 0, 0.5);
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: rgb(58, 39, 127);
+    box-shadow: 2px 4px 10px rgb(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+#alert {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 20rem;
+    background: whitesmoke;
+    border-radius: 30px;
+    padding-bottom: 15px;
+    animation-name: alert-appear;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+}
