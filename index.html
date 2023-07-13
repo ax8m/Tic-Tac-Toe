@@ -12,7 +12,7 @@
     <!-- <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script> -->
     <!-- CSS -->
     <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" /> -->
-    <!--// Alertify JS //-->
+    <!--// Alertify JS // -->
 
 </head>
 
@@ -22,34 +22,54 @@
         <div id="all-content">
 
             <div id="space-game">
-
+                <h1 id="player-turn">player 1 turn</h1>
                 <div id="table-game">
-                    <div class="squre" style="border-top: none;border-left: none;">
-                        <h3>X</h3>
+
+                    <div class="square" value="1" style="border-top: none;border-left: none;">
+                        <h3 class="square-content">
+
+                        </h3>
                     </div>
-                    <div class="squre" style="border-top: none;">
-                        <h3>X</h3>
+
+                    <div class="square" value="2" style="border-top: none;">
+                        <h3 class="square-content">
+
+                        </h3>
                     </div>
-                    <div class="squre" style="border-top: none;border-right: none;">
-                        <h3>X</h3>
+                    <div class="square" value="3" style="border-top: none;border-right: none;">
+                        <h3 class="square-content">
+
+                        </h3>
                     </div>
-                    <div class="squre" style="border-left: none;">
-                        <h3>X</h3>
+                    <div class="square" value="4" style="border-left: none;">
+                        <h3 class="square-content">
+
+                        </h3>
                     </div>
-                    <div class="squre">
-                        <h3>X</h3>
+                    <div class="square" value="5">
+                        <h3 class="square-content">
+
+                        </h3>
                     </div>
-                    <div class="squre" style="border-right: none;">
-                        <h3>X</h3>
+                    <div class="square" value="6" style="border-right: none;">
+                        <h3 class="square-content">
+
+                        </h3>
                     </div>
-                    <div class="squre" style="border-left: none;border-bottom: none;">
-                        <h3>X</h3>
+                    <div class="square" value="7" style="border-left: none;border-bottom: none;">
+                        <h3 class="square-content">
+
+                        </h3>
                     </div>
-                    <div class="squre" style="border-bottom: none;">
-                        <h3>X</h3>
+                    <div class="square" value="8" style="border-bottom: none;">
+                        <h3 class="square-content">
+
+                        </h3>
                     </div>
-                    <div class="squre" style="border-right: none; border-bottom: none;">
-                        <h3>X</h3>
+                    <div class="square" value="9" style="border-right: none; border-bottom: none;">
+                        <h3 class="square-content">
+
+                        </h3>
                     </div>
                 </div>
 
@@ -61,17 +81,17 @@
 
                 <div id="players-result">
                     <div class="player">
-                        <h4>Player 1</h4>
+                        <h4 id="playerName-1">Player 1</h4>
                         <p>0</p>
                     </div>
                     <div class="player">
-                        <h4>player 2</h4>
+                        <h4 id="playerName-2">player 2</h4>
                         <p>2</p>
                     </div>
                 </div>
 
                 <div>
-                    <button type="reset" id="result-btn">
+                    <button type="reset" id="result-btn" onclick="enterNames()">
                         reset
                     </button>
                 </div>
@@ -93,7 +113,7 @@
                 <input type="text" name="name" id="player2" title="Write a name">
             </div>
             <div>
-                <button type="submit">OK</button>
+                <button type="submit" onclick="enterNames()">OK</button>
             </div>
         </div>
 
@@ -108,5 +128,6 @@
 
     </div>
 </body>
+<script src="logic.js"></script>
 
 </html>
