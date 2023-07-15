@@ -1,6 +1,8 @@
 body {
     background-color: #fcdc00;
     margin: 0px;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Permanent Marker', cursive;
 }
 
 @keyframes alert-appear {
@@ -23,6 +25,17 @@ body {
 
     } */
 
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    #all-content {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
 }
 
 #main-continer {
@@ -102,6 +115,8 @@ button {
     border: none;
     box-shadow: 1px 2px 5px rgb(0, 0, 0, 0.5);
     margin-top: 30px;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Permanent Marker', cursive;
 }
 
 button:hover {
@@ -122,10 +137,10 @@ button:hover {
     border-radius: 30px;
     padding-bottom: 15px;
     visibility: hidden;
-    animation-name: alert-appear;
+    /* animation-name: alert-appear;
     animation-duration: 1.5s;
     animation-delay: 0.5s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
     transition: all 0.5s;
 }
 

@@ -7,12 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 
-    <!-- Alertify JS -->
-    <!-- JavaScript -->
-    <!-- <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script> -->
-    <!-- CSS -->
-    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" /> -->
-    <!--// Alertify JS // -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;1,400;1,700&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -82,16 +81,16 @@
                 <div id="players-result">
                     <div class="player">
                         <h4 id="playerName-1">Player 1</h4>
-                        <p>0</p>
+                        <p id="player1-result">0</p>
                     </div>
                     <div class="player">
                         <h4 id="playerName-2">player 2</h4>
-                        <p>2</p>
+                        <p id="player2-result">0</p>
                     </div>
                 </div>
 
                 <div>
-                    <button type="reset" id="result-btn" onclick="enterNames()">
+                    <button type="reset" id="result-btn" onclick="reset()">
                         reset
                     </button>
                 </div>
@@ -108,9 +107,10 @@
             </div>
             <div id="body-alert">
                 <label for="">Player 1 : </label>
-                <input type="text" name="name" id="player1" title="Write a name"><br><br>
+                <input type="text" name="name" id="player1" title="Write a name" autocomplete="on"
+                    value="player 1"><br><br>
                 <label for="">Player 2 : </label>
-                <input type="text" name="name" id="player2" title="Write a name">
+                <input type="text" name="name" id="player2" title="Write a name" autocomplete="on" value="player 2">
             </div>
             <div>
                 <button type="submit" onclick="enterNames()">OK</button>
@@ -129,5 +129,6 @@
     </div>
 </body>
 <script src="logic.js"></script>
+<script>playAgain()</script>
 
 </html>
