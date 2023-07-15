@@ -19,12 +19,6 @@ body {
         visibility: visible;
     }
 
-    /* 100% {
-        width: 20rem;
-        opacity: 1;
-
-    } */
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -110,7 +104,6 @@ button {
     color: white;
     width: 6rem;
     height: 2rem;
-    /* font-size: 20px; */
     border-radius: 15px;
     border: none;
     box-shadow: 1px 2px 5px rgb(0, 0, 0, 0.5);
@@ -137,10 +130,6 @@ button:hover {
     border-radius: 30px;
     padding-bottom: 15px;
     visibility: hidden;
-    /* animation-name: alert-appear;
-    animation-duration: 1.5s;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards; */
     transition: all 0.5s;
 }
 

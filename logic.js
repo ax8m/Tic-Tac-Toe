@@ -12,17 +12,11 @@ let boardArray = [
 // // check if there any data in local host
 if (localStorage.length == 0) {
     document.getElementById("alert").style.animation = "alert-appear 1.5s 2s forwards"
-    // theGame()
 }
 else {
-    let player1 = document.getElementById("player1").value
-    let player2 = document.getElementById("player2").value
     // player names
     document.getElementById("playerName-1").innerHTML = localStorage.getItem("player-1")
     document.getElementById("playerName-2").innerHTML = localStorage.getItem("player-2")
-
-    // turn
-    // document.getElementById("player-turn").innerHTML = `${localStorage.getItem("player-1")} turn`
 
     // results
     document.getElementById("player1-result").innerHTML = localStorage.player1Result
@@ -209,15 +203,9 @@ function reset() {
     </div>
     `
     document.getElementById("alert").style.animation = "alert-appear 1.5s 0.5s forwards"
-    // document.getElementById("alert").style.animationFillMode = "forwards"
 
     document.getElementById("player1-result").innerHTML = 0
     document.getElementById("player2-result").innerHTML = 0
-
-    // var playerName1 = localStorage.getItem('player-1')
-    // var playerName2 = localStorage.getItem('player-2')
-
-    // document.getElementById("player-turn").innerHTML = playerName1
 
     currentTurn = currentTurn == "O" ? "O" : "X"
     gameIsFinished = false
